@@ -1,0 +1,38 @@
+.page {
+    position: relative;
+    border: 2px solid darkblue;
+    height: 44rem;
+    width: 28rem;
+    border-radius: 2rem;
+    background-image: url(./images/bg2.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+#ID{
+    position: relative;
+    left: 19rem;
+}
+#PASS{
+    position: relative;
+    top: -1rem;
+}
+#signUp{
+    position: relative;
+    font-size: 13px;
+    color: aliceblue;
+    top: -0.5rem;
+}
+#link{
+    position: relative;
+    left: 19rem;
+    color: aliceblue !important;
+}
+.btnn{
+    position: relative;
+    top: -0.8rem;
+    left: rem;
+}
+#btn2{
+    position: relative;
+    top: -1rem;
+}
