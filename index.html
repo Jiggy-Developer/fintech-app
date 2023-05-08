@@ -4,46 +4,62 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>index</title>
         <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
         <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container mt-5">
-            <div class="page">
-                <div class="logo mt-4 ms-4 ">
+        <div id="frontpage" class="container-fluid mt-3">
+            <div class="page mx-auto">
+                <div id="mobile" class="logo mt-4 ms-4 ">
                     <img src="./images/firstMobile.png" width="70" alt="">
-                </div> <br><br><br><br><br><br><br>
-
-                <div class="mb-0 mt-5 w-60">
-                    <label for="exampleFormControlInput1" class="form-label text-info">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your E-mail">
-
-                    <div id="ID" class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Remember ID
-                        </label>
-                      </div>
-                  </div>
-
-                  <div id="PASS" class="mb-2 mt-0 w-60">
-                    <label for="exampleFormControlInput1" class="form-label text-info">Password</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Password">
-                    <p ><a id="link" href="">forgot password?</a></p>
-                    
-                  </div>
+                    <p class="text">Mobile Banking App</p>
+                </div>
+                <!-- <p>Easy Banking On The Go...</p> -->
+                 <br><br><br><br><br><br>
+<!--  -->
+                  <marquee behavior="" direction=""><h1>Easy Banking On The Go...</h1></marquee> <br> <hr>
                   <div class="btnn">
-                    <button type="button" class="btn btn-info w-100 ">LOG IN</button>
+                    <button id="LogIn" type="button" class="btn btn- w-100 p-3 ">LOG IN</button>
                 </div>
                 <div>
-                    <p id="signUp">Don't have an account?</p>
-                    <button id="btn2" type="button" class="btn btn-info w-100">SIGN UP</button>
+                    <p id="signUpp">Don't have an account?</p>
+                    <!-- <a href="signUp.html">SIGN</a> -->
+                   <button id="signUp"   type="button" class="btn w-100 p-3 text-dark text-bold" >SIGN UP</button> 
                     
+                </div> <br> <br>
+                <div class="quick">
+                    <div class="settings">
+                        <img id="settingsIMG" src="./images/settings.png" width="40" alt="">
+                     <br>  
+                        <p id="set">Settings</p>
+                    </div>
+
+                    <div class="Needhelp">
+                        <img id="settingsIMG" src="./images/help_center_FILL0_wght400_GRAD0_opsz48.png" width="40" alt="">
+                     <br>  
+                        <p id="set">NeedHelp?</p>
+                    </div>
+
+                    <div class="sett3">
+                        <img id="settingsIMG" src="./images/contact.png" width="40" alt="">
+                     <br>  
+                        <p id="set">ContactUs</p>
+                    </div>
                 </div>
                   
             </div>
         </div>
+
+
+        <script>
+             document.getElementById("signUp").addEventListener('click', ()=>{
+           window.location.href = "signUp.html"
+       })
+       document.getElementById("LogIn").addEventListener('click', ()=>{
+           window.location.href = "login.html"
+       })
+        </script>
     </body>
 </html>
